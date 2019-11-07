@@ -46,9 +46,19 @@ img{
     margin-bottom:2px;
 }
 .maintext{
-    padding:40px 10px;
-    font-size: 2.0em;
-    line-height: 60px;
+    padding:20px 10px;
+
+}
+.maintext h1{
+    font-size: 2.7em;
+    line-height: 40px;
+    width:250px;
+}
+.maintext p{
+    font-size:1em;
+    padding:20px 0px 0px 0px;
+
+
 }
 .read{
     text-decoration: underline;
@@ -57,7 +67,7 @@ img{
     
 }
 .button{
-    padding:10px 20px;
+    padding:0px 10px;
 }
 button{
     background-color:#922C73;
