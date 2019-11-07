@@ -1,0 +1,80 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+   font-family: 'Paytone One', sans-serif;
+   background-color:#181A27;
+   color:white;
+   background-image: url(IMG_4970verysmall.jpg);
+   background-repeat: no-repeat;  
+   background-position-x: 0px;
+   background-position-y: 400px;
+}
+img{
+    width:100%;
+}
+.header{
+    background-color: black;
+    margin:0px;
+    padding:15px;
+    display:block;
+}
+.header ul{
+    padding:0px;
+    list-style: none;
+    text-align: center;
+    
+
+}
+.header ul li{
+    display:inline-block;
+    padding: 0px 05px;
+}
+.header h1{
+    padding:0px;
+    font-size:1.0em;
+}
+.burgermenu{
+   
+}
+.burgermenu span{
+    background:white;
+    width:20px;
+    height:4px;
+    display:block;
+    margin-bottom:2px;
+}
+.maintext{
+    padding:40px 10px;
+    font-size: 2.0em;
+    line-height: 60px;
+}
+.read{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    
+    
+}
+.button{
+    padding:10px 20px;
+}
+button{
+    background-color:#922C73;
+    color:white;
+    padding:15px 46px;
+    font-size: 1.4em;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border:none;
+}
+
+
+@media screen and (min-width:375px){
+    body{
+        background-image: url(IMG_4970small.jpg);
+        background-position-x: 0px;
+        background-position-y: 500px;
+    }
+}
