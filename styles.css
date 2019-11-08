@@ -34,6 +34,7 @@ img{
 .header h1{
     padding:0px;
     font-size:1.0em;
+
 }
 .burgermenu{
    
@@ -52,7 +53,16 @@ img{
 .maintext h1{
     font-size: 2.7em;
     line-height: 40px;
-    width:250px;
+    width:200px;
+    padding-bottom:10px;
+}
+
+.maintext h1:after{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 60%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 4px solid yellow; /* This creates the border. Replace black with whatever color you want. */
 }
 .maintext p{
     font-size:1em;
@@ -60,19 +70,14 @@ img{
 
 
 }
-.read{
-    text-decoration: underline;
-    text-decoration-color: yellow;
-    
-    
-}
+
 .button{
     padding:0px 10px;
 }
 button{
     background-color:#922C73;
     color:white;
-    padding:15px 46px;
+    padding:15px 40px;
     font-size: 1.4em;
     border-radius: 15px;
     cursor: pointer;
