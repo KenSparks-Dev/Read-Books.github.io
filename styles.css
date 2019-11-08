@@ -9,7 +9,10 @@ body{
    background-image: url(IMG_4970verysmall.jpg);
    background-repeat: no-repeat;  
    background-position-x: 0px;
-   background-position-y: 400px;
+   background-position-y: 70vh;
+   background-size: 100%;
+   
+
 }
 img{
     width:100%;
@@ -63,17 +66,23 @@ img{
     width: 60%; /* Change this to whatever width you want. */
     padding-top: 10px; /* This creates some space between the element and the border. */
     border-bottom: 4px solid yellow; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s;
 }
+
+.maintext h1:hover:after {
+    width: 15%; /* This will be the new width of your border when on hover */
+}
+
+
 .maintext p{
-    font-size:1em;
-    padding:20px 0px 0px 0px;
-
-
+        font-size:.9em;
+        padding:10px 0px 0px 0px;
 }
 
 .button{
     padding:0px 10px;
 }
+
 button{
     background-color:#922C73;
     color:white;
@@ -87,9 +96,17 @@ button{
 
 
 @media screen and (min-width:375px){
-    body{
-        background-image: url(IMG_4970small.jpg);
-        background-position-x: 0px;
-        background-position-y: 500px;
+    .maintext p{
+        font-size:.9em;
+        padding:20px 0px 0px 0px;
+    
+    
     }
+}
+@media screen and (min-height:770px){
+    .maintext p{
+        font-size:1.3em;
+        padding:20px 0px 0px 0px;    
+    }
+
 }
