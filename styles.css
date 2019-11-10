@@ -83,7 +83,7 @@ img{
 }
 
 .button{
-    padding:20px 10px;
+    padding:30px 10px;
 }
 
 button{
@@ -99,7 +99,11 @@ button{
 
 .col-12{
     width:100%;
+    
 
+}
+.col-12 img{
+    height:30vh
 }
 @media screen and (min-width:375px){
     .maintext p{
@@ -110,7 +114,10 @@ button{
 @media screen and (min-height:770px){
     .maintext p{
         font-size:1.3em;
-        padding:20px 0px 0px 0px;    
+        padding:10px 0px 0px 0px;    
+    }
+    .button{
+        padding:10px 10px;
     }
 
 }
