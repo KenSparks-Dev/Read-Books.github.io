@@ -14,8 +14,6 @@ body{
    background-repeat: no-repeat;  
    background-position-x: 0px;
    background-size: 100%;*/
-   
-
 }
 img{
     width:100%;
@@ -109,6 +107,9 @@ button{
     .maintext p{
         font-size:.9em;
         padding:20px 0px 0px 0px; 
+    }
+    .button{
+        padding: 0px 0px 10px 10px;
     }
 }
 @media screen and (min-height:770px){
