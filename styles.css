@@ -10,11 +10,10 @@ body{
    font-family: 'Paytone One', sans-serif;
    background-color:#181A27;
    color:white;
-   background-image: url(IMG_4970verysmall.jpg);
+  /* background-image: url(IMG_4970verysmall.jpg);
    background-repeat: no-repeat;  
    background-position-x: 0px;
-   background-position-y: 70vh;
-   background-size: 100%;
+   background-size: 100%;*/
    
 
 }
@@ -84,7 +83,7 @@ img{
 }
 
 .button{
-    padding:0px 10px;
+    padding:20px 10px;
 }
 
 button{
@@ -98,7 +97,10 @@ button{
     border:none;
 }
 
+.col-12{
+    width:100%;
 
+}
 @media screen and (min-width:375px){
     .maintext p{
         font-size:.9em;
