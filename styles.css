@@ -24,7 +24,9 @@ body{
 img{
     width:100%;
 }
-
+.small{
+    display:none;
+}
 
 .header{
     background-color: black;
@@ -62,6 +64,7 @@ img{
     padding:20px 10px;
 
 }
+
 .maintext h1{
     font-size: 2.7em;
     line-height: 40px;
@@ -81,7 +84,6 @@ img{
 .maintext h1:hover:after {
     width: 15%; /* This will be the new width of your border when on hover */
 }
-
 
 .maintext p{
         font-size:.9em;
@@ -105,29 +107,39 @@ button{
 
 .col-12{
     width:100%;
-    
-
 }
+
 .col-12 img{
-    height:35vh;
-    
+    height:35vh;   
 }
 @media screen and (min-width:375px){
     .maintext p{
         font-size:.9em;
         padding:20px 0px 0px 0px; 
     }
-    .button{
-        padding: 0px 0px 10px 10px;
-    }
+   
 }
 @media screen and (min-height:770px){
     .maintext p{
         font-size:1.3em;
         padding:10px 0px 0px 0px;    
     }
-    .button{
-        padding:10px 10px;
+    
+}
+
+
+
+@media screen and (min-width:600px){
+    .maintext{
+        padding-bottom:10px;
+    }
+    .maintext h1{
+        font-size: 6.0em;
+        line-height: 75px;
+        margin-bottom:10px;
+    }
+    .image{
+        width:100%;
     }
 }
 
@@ -163,3 +175,90 @@ button{
    
 }
 }
+/*tablet*/
+@media screen and (min-width:1000px){
+    body{
+        background-image: url(IMG_4970.jpg);
+        background-repeat: no-repeat;  
+        background-position-x: 0px;
+        background-size: 100%;
+    }
+    .col-5{
+        width:50%;
+    }
+.header{
+     background-color: black;
+     margin:0px;
+     padding:30px;
+     display:block;
+ }
+ .header h1{
+     padding:0px;
+     font-size:1.8em;
+ }
+ .maintext{
+     margin:295px 0px;
+     margin-left:500px;
+ }
+ .maintext h1{
+     font-size: 3.5em;
+     line-height: 48px;
+     width:400px;
+     padding-bottom:1px;
+ }
+ .maintext p{
+     font-size:1.0em;
+     padding:2px 0px 0px 0px;
+ }
+ .col-5 img{
+    display:none;
+    height:0vh;
+ }
+ .small{
+     display:none;
+ }
+ }
+ 
+ @media screen and (min-width:1100px){
+    .maintext{
+        margin:495px 0px;
+        margin-left:650px;
+    }
+    .maintext h1{
+        font-size: 4.5em;
+        line-height: 68px;
+        width:500px;
+        padding-bottom:1px;
+    }
+    .maintext p{
+        font-size:1.3em;
+        width:600px;
+    }
+ }
+ @media screen  and (min-width:1080px){
+    body{
+        background-image: url(IMG_4970.jpg);
+        background-repeat: no-repeat;  
+        background-position-x: 0px;
+        background-size: 100%;
+        height:10vh    }
+     .header{
+         padding:15px;
+     }
+    .maintext{
+        margin:450px 0px;
+        margin-left:1300px;
+    }
+    .maintext h1{
+        font-size: 4.5em;
+        line-height: 68px;
+        width:500px;
+        padding-bottom:1px;
+        text-shadow: 9px 3px black
+    }
+    .maintext p{
+        font-size:1.3em;
+        width:600px;
+    }
+ }
+ }
