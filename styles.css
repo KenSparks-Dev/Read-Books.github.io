@@ -237,7 +237,7 @@ button{
  }
  @media screen  and (min-width:1080px){
     body{
-        background-image: url(IMG_4970.jpg);
+        background-image: url(ImageComics.png);
         background-repeat: no-repeat;  
         background-position-x: 0px;
         background-size: 100%;
@@ -261,4 +261,4 @@ button{
         width:600px;
     }
  }
- }
+ 
