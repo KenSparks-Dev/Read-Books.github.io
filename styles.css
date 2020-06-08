@@ -1,57 +1,59 @@
-*{
-    padding:0px;
-    margin:0px;
+* {
+	padding: 0px;
+	margin: 0px;
 }
-html, body{
-    width:100%;
-    height:100%;
+html,
+body {
+	width: 100%;
+	height: 100%;
 }
 * {
-    box-sizing: border-box;
-  }
-  [class*="col-"] {
-    float: left;
-  }
-body{
-   font-family: 'Paytone One', sans-serif;
-   background-color:#181A27;
-   color:white;
-  /* background-image: url(IMG_4970verysmall.jpg);
+	box-sizing: border-box;
+}
+[class*="col-"] {
+	float: left;
+}
+body {
+	font-family: 'Paytone One', sans-serif;
+	background-color: #181a27;
+	color: white;
+	/* background-image: url(IMG_4970verysmall.jpg);
    background-repeat: no-repeat;  
    background-position-x: 0px;
    background-size: 100%;*/
 }
-img{
-    width:100%;
+img {
+    width: 100%;
+    height:100vh;
 }
-.small{
-    display:none;
+.small {
+	display: none;
 }
-
-.header{
-    background-color: black;
-    margin:0px;
-    padding:15px;
-    display:block;
+.col-5{
+    position:absolute;
+    margin:0;
+    padding:0
 }
-.header ul{
-    padding:0px;
-    list-style: none;
-    text-align: center;
-    
-
+.header {
+	background-color: black;
+	margin: 0px;
+	padding: 15px;
+	display: block;
 }
-.header ul li{
-    display:inline-block;
-    padding: 0px 05px;
+.header ul {
+	padding: 0px;
+	list-style: none;
+	text-align: center;
 }
-.header h1{
-    padding:0px;
-    font-size:1.0em;
-
+.header ul li {
+	display: inline-block;
+	padding: 0px 05px;
 }
-.burgermenu{
-   
+.header h1 {
+	padding: 0px;
+	font-size: 1.0em;
+}
+.burgermenu {
 }
 /*.burgermenu span{
     background:white;
@@ -60,225 +62,219 @@ img{
     display:block;
     margin-bottom:2px;
 }*/
-.maintext{
-    padding:20px 10px;
-
+.maintext {
+	margin: 20px 10px;
 }
 
-.maintext h1{
-    font-size: 2.7em;
-    line-height: 40px;
-    width:200px;
-    padding-bottom:10px;
+.maintext h1 {
+	font-size: 4.7em;
+	line-height: 60px;
+	width: 200px;
+	padding-bottom: 10px;
 }
 
-.maintext h1:after{
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    width: 60%; /* Change this to whatever width you want. */
-    padding-top: 10px; /* This creates some space between the element and the border. */
-    border-bottom: 4px solid yellow; /* This creates the border. Replace black with whatever color you want. */
-    transition: .5s;
+.maintext h1:after {
+	content: ""; /* This is necessary for the pseudo element to work. */
+	display: block; /* This will put the pseudo element on its own line. */
+	width: 60%; /* Change this to whatever width you want. */
+	padding-top: 10px; /* This creates some space between the element and the border. */
+	border-bottom: 4px solid yellow; /* This creates the border. Replace black with whatever color you want. */
+	transition: .5s;
 }
 
 .maintext h1:hover:after {
-    width: 15%; /* This will be the new width of your border when on hover */
+	width: 15%; /* This will be the new width of your border when on hover */
 }
 
-.maintext p{
-        font-size:.9em;
-        padding:10px 0px 0px 0px;
+.maintext p {
+	font-size: .9em;
+	padding: 10px 0px 0px 0px;
 }
 
-.button{
-    margin-top:20px;
+.button {
+	margin-top: 20px;
 }
 
-button{
-    background-color:#922C73;
-    color:white;
-    padding:15px 40px;
-    font-size: 1.4em;
-    border-radius: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    border:none;
+button {
+	background-color: #922c73;
+	color: white;
+	padding: 15px 40px;
+	font-size: 1.4em;
+	border-radius: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
 }
 
-.col-12{
-    width:100%;
+.col-12 {
+	width: 100%;
 }
 
-.col-12 img{
-    height:35vh;   
+.col-12 img {
+    /* height: 35vh; */
+    padding-top:0px;
 }
-@media screen and (min-width:375px){
-    .maintext p{
-        font-size:.9em;
-        padding:20px 0px 0px 0px; 
-    }
-   
+@media screen and (min-width: 375px) {
+	.maintext p {
+		font-size: .9em;
+		padding: 20px 0px 0px 0px;
+	}
 }
-@media screen and (min-height:770px){
-    .maintext p{
-        font-size:1.3em;
-        padding:10px 0px 0px 0px;    
-    }
-    
-}
-
-
-
-@media screen and (min-width:600px){
-    .maintext{
-        padding-bottom:10px;
-    }
-    .maintext h1{
-        font-size: 6.0em;
-        line-height: 75px;
-        margin-bottom:10px;
-    }
-    .image{
-        width:100%;
-    }
+@media (min-width: 576px) {
+	.maintext p {
+		font-size: 1.3em;
+		padding: 10px 0px 0px 0px;
+	}
 }
 
-@media screen and (max-height:414px){
-   .col-5{
-       width:50%;
-   }
-   .header{
-    background-color: black;
-    margin:0px;
-    padding:5px;
-    display:block;
+@media (min-width: 768px){
+	.maintext {
+		padding-bottom: 10px;
+	}
+	.maintext h1 {
+		font-size: 6.0em;
+		line-height: 75px;
+		margin-bottom: 10px;
+	}
+	.image {
+		width: 100%;
+	}
 }
-.header h1{
-    padding:0px;
-    font-size:.8em;
-}
-.maintext{
-    padding:5px 10px;
-}
-.maintext h1{
-    font-size: 2.3em;
-    line-height: 30px;
-    width:200px;
-    padding-bottom:10px;
-}
-.maintext p{
-    font-size:.7em;
-    padding:8px 0px 0px 0px;
-}
-.col-5 img{
-   height:100vh;
-   
-}
+
+@media screen and (max-height: 414px) {
+	.col-5 {
+		width: 50%;
+	}
+	.header {
+		background-color: black;
+		margin: 0px;
+		padding: 5px;
+		display: block;
+	}
+	.header h1 {
+		padding: 0px;
+		font-size: .8em;
+	}
+	.maintext {
+		padding: 5px 10px;
+	}
+	.maintext h1 {
+		font-size: 2.3em;
+		line-height: 30px;
+		width: 200px;
+		padding-bottom: 10px;
+	}
+	.maintext p {
+		font-size: .7em;
+		padding: 8px 0px 0px 0px;
+	}
+	.col-5 img {
+		height: 100vh;
+	}
 }
 /*tablet*/
-@media screen and (min-width:1000px){
-    body{
-        background-image: url(IMG_4970.jpg);
-        background-repeat: no-repeat;  
-        background-position-x: 0px;
-        background-size: 100%;
-    }
-    .col-5{
-        width:50%;
-    }
-.header{
-     background-color: black;
-     margin:0px;
-     padding:30px;
-     display:block;
- }
- .header h1{
-     padding:0px;
-     font-size:1.8em;
- }
- .maintext{
-     margin:295px 0px;
-     margin-left:500px;
- }
- .maintext h1{
-     font-size: 3.5em;
-     line-height: 48px;
-     width:400px;
-     padding-bottom:1px;
- }
- .maintext p{
-     font-size:1.0em;
-     padding:2px 0px 0px 0px;
- }
- .col-5 img{
-    display:none;
-    height:0vh;
- }
- .small{
-     display:none;
- }
- }
- 
- 
- @media screen  and (min-width:1080px){
-    body{
-        background-image: url(IMG_4970.jpg);
-        background-repeat: no-repeat;  
-        background-position-x: 0px;
-        background-size: 100%;
-        height:0vh    }
-     .header{
-         padding:15px;
-     }
-    .maintext{
-        margin:300px 0px;
-        margin-left:750px;
-    }
-    .maintext h1{
-        font-size: 3.5em;
-        line-height:50px;
-        width:500px;
-        padding-bottom:1px;
-        text-shadow: 9px 3px black
-    }
-    .maintext p{
-        font-size:1.0em;
-        width:500px;
-    }
-    .button{
+@media (min-width: 992px) {
+	body {
+		background-image: url(IMG_4970.jpg);
+		background-repeat: no-repeat;
+		background-position-x: 0px;
+		background-size: 100%;
+	}
+	.col-5 {
+		width: 50%;
+	}
+	.header {
+		background-color: black;
+		margin: 0px;
+		padding: 30px;
+		display: block;
+	}
+	.header h1 {
+		padding: 0px;
+		font-size: 1.8em;
+	}
+	.maintext {
+		margin:0px 0px;
+		margin-left: 500px;
+	}
+	.maintext h1 {
+		font-size: 3.5em;
+		line-height: 48px;
+		width: 400px;
+		padding-bottom: 1px;
+	}
+	.maintext p {
+		font-size: 1.0em;
+		padding: 2px 0px 0px 0px;
+	}
+	.col-5 img {
+		display: none;
+		height: 0vh;
+	}
+	.small {
+		display: none;
+	}
+}
 
-    }
-    button{
-        background-color:#922C73;
-        color:white;
-        padding:10px 30px;
-        font-size: 1.3em;
-        border-radius: 10px;
-        cursor: pointer;
-        text-decoration: none;
-        border:none;
-    }
+@media (min-width: 1200px) {
+	body {
+		background-image: url(IMG_4970.jpg);
+		background-repeat: no-repeat;
+		background-position-x: 0px;
+		background-size: 100%;
+		height: 0vh;
+	}
+	.header {
+		padding: 15px;
+	}
+	.maintext {
+		margin: 0px 0px;
+		margin-left: 750px;
+	}
+	.maintext h1 {
+		font-size: 3.5em;
+		line-height: 50px;
+		width: 500px;
+		padding-bottom: 1px;
+		text-shadow: 9px 3px black;
+	}
+	.maintext p {
+		font-size: 1.0em;
+		width: 500px;
+	}
+	.button {
+	}
+	button {
+		background-color: #922c73;
+		color: white;
+		padding: 10px 30px;
+		font-size: 1.3em;
+		border-radius: 10px;
+		cursor: pointer;
+		text-decoration: none;
+		border: none;
+	}
 
-    @media screen and (min-width:1300px){
-        .header{
-            padding:25px;
+	@media screen and (min-width: 1300px) {
+		.header {
+			padding: 25px;
+		}
+		.maintext {
+			padding-left: 300px;
+		}
+		.maintext h1 {
+			font-size: 4.5em;
+			line-height: 68px;
+			width: 500px;
+			padding-bottom: 1px;
+		}
+		.maintext p {
+			font-size: 1.3em;
+			width: 600px;
         }
-        .maintext{
-            margin:490px 0px;
-            padding-left:1300px;
+        img{
+            height:100vh
         }
-        .maintext h1{
-            font-size: 4.5em;
-            line-height: 68px;
-            width:500px;
-            padding-bottom:1px;
-        }
-        .maintext p{
-            font-size:1.3em;
-            width:600px;
-        }
-     }
-     
-    
- }
- 
+      
+	}
+}
